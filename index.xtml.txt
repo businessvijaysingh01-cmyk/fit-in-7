@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT IN 7 - Luxury Personal Coaching & Fitness Transformation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        goldHover: '#B59223',
+                        goldLight: '#F3E5AB',
+                        obsidian: '#0F0F0F',
+                        surface: '#18181B',
+                        cardBg: '#27272A',
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F0F0F;
+            color: #F4F4F5;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+            color: #000;
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+        .bicep-badge {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-200">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-obsidian/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-gold/20 border border-gold flex items-center justify-center font-display font-black text-gold text-xl relative overflow-hidden group">
+                    <span class="z-10">7</span>
+                    <i class="fa-solid fa-dumbbell text-[10px] absolute -bottom-1 -right-1 text-gold/40"></i>
+                </div>
+                <div>
+                    <span class="font-display font-black text-2xl tracking-wider text-white flex items-center gap-1">
+                        FIT IN 
+                        <span class="text-gold relative inline-flex items-center">
+                            7
+                            <i class="fa-solid fa-biceps text-gold text-lg ml-0.5 transform -rotate-12 hover:scale-125 transition-transform" title="Fitness Bicep"></i>
+                        </span>
+                    </span>
+                    <span class="block text-[9px] uppercase tracking-widest text-gold/80 font-semibold">Luxury Personal Coaching</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-xs uppercase font-bold tracking-widest text-gray-300">
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#gallery" class="hover:text-gold transition">Motivation & Gym</a>
+                <a href="#services" class="hover:text-gold transition">Programs</a>
+                <a href="#consultation" class="hover:text-gold transition">₹99 Consultation</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="openBookingModal('1-on-1 Strategy Consultation Call', 99)" class="gold-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> ₹99 Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
+        <!-- Background Gym Visual Overlay -->
+        <div class="absolute inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none rounded-3xl" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1400&auto=format&fit=crop');"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold/10 rounded-full filter blur-3xl pointer-events-none"></div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-gold text-xs font-semibold">
+                    <i class="fa-solid fa-dumbbell text-xs"></i> Direct 1-on-1 Fitness & Body Transformation
+                </div>
+
+                <h1 class="font-display text-4xl sm:text-6xl font-black text-white leading-tight">
+                    TRANSFORM YOUR BODY WITH 
+                    <span class="gold-gradient-text block flex items-center gap-2">
+                        FIT IN 7 <i class="fa-solid fa-biceps text-gold text-3xl sm:text-5xl inline-block"></i>
+                    </span>
+                </h1>
+
+                <p class="text-gold font-bold text-base sm:text-lg tracking-wide uppercase font-display flex items-center gap-2">
+                    <i class="fa-solid fa-fire-flame-curved text-amber-500"></i> 7 Days to Reset. 30 Days to Transform.
+                </p>
+
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                    No pre-recorded videos. Experience 1-on-1 live Zoom training, customized high-protein nutrition plans, posture & strength audits, or request <strong class="text-gold">Doorstep Personal Gym Training in Aligarh</strong>.
+                </p>
+
+                <div class="pt-4 flex flex-wrap items-center gap-4">
+                    <a href="#services" class="gold-btn px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center gap-2">
+                        View Training Plans <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button onclick="openBookingModal('7-Day Online Live Trial', 1999)" class="bg-surface hover:bg-cardBg border border-gold/40 text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-wider transition flex items-center gap-2">
+                        <i class="fa-solid fa-dumbbell text-gold"></i> Start 7-Day Trial (₹1,999)
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-center sm:text-left">
+                    <div>
+                        <p class="text-xl font-black text-gold font-display flex items-center gap-1 justify-center sm:justify-start">
+                            <i class="fa-solid fa-bolt text-xs"></i> 100% LIVE
+                        </p>
+                        <p class="text-[11px] text-gray-400 uppercase tracking-wider">Zoom & In-Person</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-black text-gold font-display flex items-center gap-1 justify-center sm:justify-start">
+                            <i class="fa-solid fa-location-dot text-xs"></i> ALIGARH
+                        </p>
+                        <p class="text-[11px] text-gray-400 uppercase tracking-wider">Doorstep Classes</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-black text-gold font-display flex items-center gap-1 justify-center sm:justify-start">
+                            <i class="fa-solid fa-apple-whole text-xs"></i> 1-ON-1
+                        </p>
+                        <p class="text-[11px] text-gray-400 uppercase tracking-wider">Personalized Diet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERO CARD / OFFER -->
+            <div id="consultation" class="lg:col-span-5">
+                <div class="bg-cardBg/90 backdrop-blur-sm border border-gold/40 rounded-3xl p-6 sm:p-8 gold-border-glow relative">
+                    <div class="absolute -top-3 right-6 bg-gold text-black font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow">
+                        Most Popular
+                    </div>
+
+                    <span class="text-xs font-bold text-gold uppercase tracking-widest flex items-center gap-1.5">
+                        <i class="fa-solid fa-medal text-gold"></i> Special Entry Offer
+                    </span>
+                    <h2 class="font-display text-2xl font-bold text-white mt-1">1-on-1 Strategy Consultation</h2>
+                    <p class="text-xs text-gray-400 mt-2">Book a 30-minute direct call with Coach Bijendra Singh to analyze your injuries, diet, and fitness roadmap.</p>
+
+                    <div class="my-6 p-4 rounded-2xl bg-surface border border-white/5 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-gray-400 line-through">Regular Fee: ₹999</p>
+                            <p class="text-3xl font-black text-gold font-display">₹99 <span class="text-xs text-gray-400 font-sans font-normal">/ session</span></p>
+                        </div>
+                        <i class="fa-solid fa-comments text-3xl text-gold/30"></i>
+                    </div>
+
+                    <ul class="space-y-2.5 text-xs text-gray-300 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Medical & Injury Background Review</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Custom Diet Guidelines Breakdown</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Custom Goal Setting Roadmap</li>
+                    </ul>
+
+                    <button onclick="openBookingModal('1-on-1 Strategy Consultation Call', 99)" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Book Consultation for ₹99
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTIVATION & FITNESS GALLERY SECTION -->
+    <section id="gallery" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold flex items-center justify-center gap-2">
+                <i class="fa-solid fa-heart-pulse"></i> Real Discipline. Premium Coaching.
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Fitness, Strength & Mindset</h2>
+            <p class="text-xs sm:text-sm text-gray-400 mt-2">From heavy dumbbell strength sessions to calming yoga mobility routines, we cover every pillar of body conditioning.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1: Gym Strength -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-surface">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop" alt="Gym Strength Training" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent p-5 flex flex-col justify-end">
+                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-1"><i class="fa-solid fa-dumbbell mr-1"></i> Strength & Muscles</span>
+                    <h3 class="text-white font-bold text-lg">Hypertrophy & Bicep Sculpting</h3>
+                    <p class="text-gray-300 text-xs mt-1">Form-focused dumbbell workouts for maximum strength output.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Yoga & Mobility -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-surface">
+                <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=800&auto=format&fit=crop" alt="Yoga & Flexibility" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent p-5 flex flex-col justify-end">
+                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-1"><i class="fa-solid fa-spa mr-1"></i> Recovery & Yoga</span>
+                    <h3 class="text-white font-bold text-lg">Postural Correction & Flow</h3>
+                    <p class="text-gray-300 text-xs mt-1">Enhance flexibility, core stability, and back pain rehabilitation.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Weight Loss & Cardio -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-surface">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Fat Loss Motivation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent p-5 flex flex-col justify-end">
+                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-1"><i class="fa-solid fa-fire mr-1"></i> Fat Loss</span>
+                    <h3 class="text-white font-bold text-lg">High-Intensity Sweat Sessions</h3>
+                    <p class="text-gray-300 text-xs mt-1">Targeted calorie-burning routines designed to melt stubborn fat.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Personal Coaching -->
+            <div class="group relative rounded-2xl overflow-hidden border border-white/10 bg-surface">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" alt="1 on 1 Doorstep Trainer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent p-5 flex flex-col justify-end">
+                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-1"><i class="fa-solid fa-user-ninja mr-1"></i> Aligarh Doorstep</span>
+                    <h3 class="text-white font-bold text-lg">Dedicated 1-on-1 Guidance</h3>
+                    <p class="text-gray-300 text-xs mt-1">Personal attention to ensure top accuracy in every rep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM SELECTION SECTION -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold">Flexible Coaching Modes</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Choose Your FIT IN 7 Experience</h2>
+            <p class="text-xs sm:text-sm text-gray-400 mt-3">Whether you want online live coaching from home or direct doorstep personal training in Aligarh, we have the right program for you.</p>
+
+            <!-- TAB CONTROLLER -->
+            <div class="flex flex-wrap justify-center gap-2 mt-8 bg-surface p-1.5 rounded-2xl border border-white/10 max-w-2xl mx-auto text-xs font-bold">
+                <button onclick="switchTab('online')" id="tab-online" class="flex-1 py-3 px-4 rounded-xl transition bg-gold text-black">
+                    <i class="fa-solid fa-laptop text-sm mr-1.5"></i> Online Live Zoom
+                </button>
+                <button onclick="switchTab('inperson')" id="tab-inperson" class="flex-1 py-3 px-4 rounded-xl transition text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-location-dot text-sm mr-1.5"></i> Aligarh Doorstep
+                </button>
+                <button onclick="switchTab('group')" id="tab-group" class="flex-1 py-3 px-4 rounded-xl transition text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-users text-sm mr-1.5"></i> Group Zoom Classes
+                </button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 1: ONLINE ZOOM PLANS -->
+        <div id="content-online" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- 7-Day Online Trial -->
+            <div class="bg-cardBg border border-gold/30 rounded-3xl p-6 sm:p-8 hover:border-gold transition relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-gold text-9xl pointer-events-none">
+                    <i class="fa-solid fa-biceps"></i>
+                </div>
+                <span class="text-[10px] font-bold text-gold uppercase tracking-widest bg-gold/10 px-3 py-1 rounded-full border border-gold/20">Trial Pass</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-3 flex items-center gap-2">
+                    FIT IN 7 <i class="fa-solid fa-biceps text-gold text-xl"></i> - 7-Day Trial
+                </h3>
+                <p class="text-xs text-gray-400 mt-1">7 Consecutive Days of Live 1-on-1 Zoom Coaching</p>
+
+                <div class="my-6">
+                    <span class="text-3xl font-black text-gold font-display">₹1,999</span>
+                    <span class="text-xs text-gray-400"> / 7 Days (~₹280/session)</span>
+                </div>
+
+                <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Day 1 Medical & Lifestyle Assessment</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> 6 Days Live 1-on-1 Interactive Zoom Workouts</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Customized Nutrition & Diet Outline</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> WhatsApp Habit & Water Tracking</li>
+                </ul>
+
+                <button onclick="openBookingModal('FIT IN 7 - 7-Day Online Trial', 1999)" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider relative z-10">
+                    Book 7-Day Trial (₹1,999)
+                </button>
+            </div>
+
+            <!-- 30-Day Transformation -->
+            <div class="bg-cardBg border-2 border-gold rounded-3xl p-6 sm:p-8 relative gold-border-glow overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-gold text-9xl pointer-events-none">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="absolute -top-3 right-6 bg-gold text-black font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                    Best Value
+                </div>
+                <span class="text-[10px] font-bold text-gold uppercase tracking-widest bg-gold/10 px-3 py-1 rounded-full border border-gold/20">Full Transformation</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-3 flex items-center gap-2">
+                    FIT IN 30 <i class="fa-solid fa-fire text-amber-500 text-xl"></i> - Full Month
+                </h3>
+                <p class="text-xs text-gray-400 mt-1">30 Days Complete Lifestyle & Body Recomposition</p>
+
+                <div class="my-6">
+                    <span class="text-3xl font-black text-gold font-display">₹7,999</span>
+                    <span class="text-xs text-gray-400"> / 30 Days (~₹260/session)</span>
+                </div>
+
+                <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> 30 Live 1-on-1 Personalized Zoom Sessions</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Weekly Weight & Physique Assessments</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> Dynamic Meal Adjustments & Macros</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold"></i> 24/7 Direct WhatsApp Coach Access</li>
+                </ul>
+
+                <button onclick="openBookingModal('FIT IN 30 - Full Month Online', 7999)" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider relative z-10">
+                    Join 30-Day Program (₹7,999)
+                </button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 2: IN-PERSON ALIGARH PLANS -->
+        <div id="content-inperson" class="hidden grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- Single Session -->
+            <div class="bg-cardBg border border-white/10 rounded-3xl p-6 hover:border-gold/50 transition">
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Doorstep Trial</span>
+                <h3 class="font-display text-xl font-bold text-white mt-2">Single Visit Session</h3>
+                <p class="text-xs text-gray-400 mt-1">In-person training at your home or gym in Aligarh</p>
+
+                <div class="my-4">
+                    <span class="text-2xl font-black text-gold font-display">₹999</span>
+                    <span class="text-xs text-gray-400"> / session</span>
+                </div>
+
+                <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> 60 Mins In-Person Coaching</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Hands-on Form Correction</li>
+                </ul>
+
+                <button onclick="openBookingModal('Aligarh Single Visit Session', 999)" class="w-full bg-surface hover:bg-gold hover:text-black text-white border border-gold/40 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition">
+                    Book Single Visit (₹999)
+                </button>
+            </div>
+
+            <!-- 7 Sessions -->
+            <div class="bg-cardBg border border-gold/40 rounded-3xl p-6 hover:border-gold transition">
+                <span class="text-[10px] font-bold text-gold uppercase tracking-widest">Local Package</span>
+                <h3 class="font-display text-xl font-bold text-white mt-2">7 In-Person Sessions</h3>
+                <p class="text-xs text-gray-400 mt-1">Doorstep training tailored for quick momentum</p>
+
+                <div class="my-4">
+                    <span class="text-2xl font-black text-gold font-display">₹5,500</span>
+                    <span class="text-xs text-gray-400"> / 7 Sessions</span>
+                </div>
+
+                <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> 7 Home/Gym Visits in Aligarh</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Personalized Nutrition Plan</li>
+                </ul>
+
+                <button onclick="openBookingModal('Aligarh 7 In-Person Sessions', 5500)" class="w-full gold-btn py-3 rounded-xl font-bold text-xs uppercase tracking-wider">
+                    Book 7 Visits (₹5,500)
+                </button>
+            </div>
+
+            <!-- 30 Sessions Full Month -->
+            <div class="bg-cardBg border-2 border-gold rounded-3xl p-6 gold-border-glow">
+                <span class="text-[10px] font-bold text-gold uppercase tracking-widest">VIP Doorstep</span>
+                <h3 class="font-display text-xl font-bold text-white mt-2">30 In-Person Sessions</h3>
+                <p class="text-xs text-gray-400 mt-1">Complete daily dedicated home personal trainer</p>
+
+                <div class="my-4">
+                    <span class="text-2xl font-black text-gold font-display">₹22,000</span>
+                    <span class="text-xs text-gray-400"> / Month</span>
+                </div>
+
+                <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> 30 Daily Doorstep Sessions</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> VIP Medical & Body Audit</li>
+                </ul>
+
+                <button onclick="openBookingModal('Aligarh 30 In-Person Sessions', 22000)" class="w-full gold-btn py-3 rounded-xl font-bold text-xs uppercase tracking-wider">
+                    Book 30 Visits (₹22,000)
+                </button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 3: GROUP ZOOM CLASSES -->
+        <div id="content-group" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-cardBg border border-white/10 rounded-3xl p-6 sm:p-8">
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Single Pass</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-2">1 Live Group Class</h3>
+                <p class="text-xs text-gray-400 mt-1">Join energetic 60-minute group workouts on Zoom</p>
+
+                <div class="my-6">
+                    <span class="text-3xl font-black text-gold font-display">₹250</span>
+                    <span class="text-xs text-gray-400"> / class</span>
+                </div>
+
+                <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> 60 Mins High Energy Zoom Session</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Fat Loss & Body Weight Conditioning</li>
+                </ul>
+
+                <button onclick="openBookingModal('1 Live Group Zoom Class', 250)" class="w-full bg-surface border border-gold/40 text-white hover:bg-gold hover:text-black py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition">
+                    Book Class for ₹250
+                </button>
+            </div>
+
+            <div class="bg-cardBg border border-gold/50 rounded-3xl p-6 sm:p-8">
+                <span class="text-[10px] font-bold text-gold uppercase tracking-widest">Monthly Pass</span>
+                <h3 class="font-display text-2xl font-bold text-white mt-2">Unlimited Group Pass</h3>
+                <p class="text-xs text-gray-400 mt-1">Unlimited access to all daily group Zoom sessions</p>
+
+                <div class="my-6">
+                    <span class="text-3xl font-black text-gold font-display">₹2,999</span>
+                    <span class="text-xs text-gray-400"> / month</span>
+                </div>
+
+                <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Unlimited Daily Group Classes</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold"></i> Weekly Group Q&A & Diet Tips</li>
+                </ul>
+
+                <button onclick="openBookingModal('Unlimited Group Class Pass', 2999)" class="w-full gold-btn py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider">
+                    Get Monthly Pass (₹2,999)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIRECT CHECKOUT / BOOKING MODAL -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
+        <div class="relative w-full max-w-lg rounded-3xl bg-cardBg border border-gold/40 p-6 sm:p-8 shadow-2xl my-8">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="mb-4">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-gold bg-gold/10 px-3 py-1 rounded-full border border-gold/30">Direct Checkout</span>
+                <h3 id="modalPackageTitle" class="font-display text-xl sm:text-2xl font-bold text-white mt-2">Book Your Session</h3>
+                <p id="modalPackagePrice" class="text-2xl font-black text-gold mt-1">₹0</p>
+            </div>
+
+            <!-- Merchant Receiver Badge -->
+            <div class="mb-5 bg-gold/10 border border-gold/30 rounded-2xl p-3 flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold text-sm shrink-0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="text-xs">
+                    <p class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Direct Verified Account</p>
+                    <p class="text-white font-bold"><span id="merchantDisplay">FIT IN 7</span> (<span id="upiDisplay" class="text-gold">fitin7@upi</span>)</p>
+                </div>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs">
+                <input type="hidden" id="selectedPackageInput">
+                <input type="hidden" id="selectedPriceInput">
+
+                <div>
+                    <label class="block font-semibold text-gray-300 mb-1">Your Full Name</label>
+                    <input type="text" id="clientName" required placeholder="e.g. Rahul Sharma" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-gold">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-semibold text-gray-300 mb-1">WhatsApp Phone Number</label>
+                        <input type="tel" id="clientPhone" required placeholder="e.g. 9876543210" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-gold">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-gray-300 mb-1">Email Address</label>
+                        <input type="email" id="clientEmail" required placeholder="name@gmail.com" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-gold">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-semibold text-gray-300 mb-1">Preferred Slot / Address (if In-Person)</label>
+                    <input type="text" id="preferredSlot" placeholder="e.g. Morning 8 AM or Address in Aligarh" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-gold">
+                </div>
+
+                <!-- Payment Options -->
+                <div>
+                    <label class="block font-semibold text-gray-300 mb-2">Choose Payment Option</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        <button type="button" onclick="selectPayMethod('gpay')" id="payBtn-gpay" class="pay-method-btn border-2 border-gold bg-gold/10 p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1">
+                            <i class="fa-brands fa-google-pay text-lg text-gold"></i>
+                            <span class="text-[10px] font-bold text-white">Google Pay</span>
+                        </button>
+                        <button type="button" onclick="selectPayMethod('phonepe')" id="payBtn-phonepe" class="pay-method-btn border border-white/10 bg-surface p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1">
+                            <i class="fa-solid fa-mobile-screen-button text-lg text-gold"></i>
+                            <span class="text-[10px] font-bold text-white">PhonePe</span>
+                        </button>
+                        <button type="button" onclick="selectPayMethod('qr')" id="payBtn-qr" class="pay-method-btn border border-white/10 bg-surface p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1">
+                            <i class="fa-solid fa-qrcode text-lg text-gold"></i>
+                            <span class="text-[10px] font-bold text-white">Scan QR</span>
+                        </button>
+                        <button type="button" onclick="selectPayMethod('paytm')" id="payBtn-paytm" class="pay-method-btn border border-white/10 bg-surface p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1">
+                            <i class="fa-solid fa-wallet text-lg text-gold"></i>
+                            <span class="text-[10px] font-bold text-white">Paytm UPI</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dynamic QR Box -->
+                <div id="qrCodeContainer" class="hidden text-center bg-surface border border-gold/30 p-4 rounded-2xl my-3">
+                    <p class="text-[11px] text-gray-300 mb-2 font-medium">Scan with Google Pay, PhonePe, Paytm, or BHIM</p>
+                    <div id="qrImageWrapper" class="flex justify-center my-2"></div>
+                    <p class="text-[10px] text-gold font-mono">Receiver: <span class="currentDynamicUpi">fitin7@upi</span></p>
+                </div>
+
+                <button type="submit" class="w-full gold-btn py-3.5 rounded-xl font-bold uppercase tracking-wider text-xs flex items-center justify-center gap-2 mt-4 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-lock text-sm"></i> Proceed & Pay <span id="btnPayAmount">₹0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-surface border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-gray-400">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gold/20 border border-gold flex items-center justify-center font-display font-bold text-gold">7</div>
+                <span class="font-display font-bold text-lg text-white flex items-center gap-1">
+                    FIT IN <span class="text-gold flex items-center">7 <i class="fa-solid fa-biceps text-gold text-sm ml-0.5"></i></span>
+                </span>
+            </div>
+            <p>© 2026 FIT IN 7 by Bijendra Singh. All Rights Reserved. Serving Aligarh & Worldwide Online.</p>
+            <div class="flex items-center gap-4 text-gold text-lg">
+                <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp hover:text-white transition"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram hover:text-white transition"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube hover:text-white transition"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT CONTROLLER -->
+    <script>
+        let currentPayMethod = 'gpay';
+        let currentPrice = 0;
+
+        // DIRECT ACCOUNT DETAILS (Pre-filled for FIT IN 7)
+        const merchantName = "FIT IN 7";
+        const merchantUpiId = "fitin7@upi"; // Default UPI account VPA
+
+        function switchTab(tab) {
+            ['online', 'inperson', 'group'].forEach(t => {
+                document.getElementById(`content-${t}`).classList.add('hidden');
+                const btn = document.getElementById(`tab-${t}`);
+                btn.classList.remove('bg-gold', 'text-black');
+                btn.classList.add('text-gray-400');
+            });
+
+            document.getElementById(`content-${tab}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`tab-${tab}`);
+            activeBtn.classList.add('bg-gold', 'text-black');
+            activeBtn.classList.remove('text-gray-400');
+        }
+
+        function openBookingModal(packageTitle, price) {
+            currentPrice = price;
+            document.getElementById('modalPackageTitle').innerText = packageTitle;
+            document.getElementById('modalPackagePrice').innerText = '₹' + price.toLocaleString('en-IN');
+            document.getElementById('btnPayAmount').innerText = '₹' + price.toLocaleString('en-IN');
+            document.getElementById('selectedPackageInput').value = packageTitle;
+            document.getElementById('selectedPriceInput').value = price;
+
+            document.getElementById('merchantDisplay').innerText = merchantName;
+            document.getElementById('upiDisplay').innerText = merchantUpiId;
+            
+            document.getElementById('bookingModal').classList.remove('hidden');
+            selectPayMethod('gpay');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        function selectPayMethod(method) {
+            currentPayMethod = method;
+            const buttons = document.querySelectorAll('.pay-method-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-2', 'border-gold', 'bg-gold/10');
+                btn.classList.add('border-white/10', 'bg-surface');
+            });
+
+            const activeBtn = document.getElementById(`payBtn-${method}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-white/10', 'bg-surface');
+                activeBtn.classList.add('border-2', 'border-gold', 'bg-gold/10');
+            }
+
+            const qrContainer = document.getElementById('qrCodeContainer');
+            if (method === 'qr') {
+                qrContainer.classList.remove('hidden');
+                generateUpiQrCode(currentPrice);
+            } else {
+                qrContainer.classList.add('hidden');
+            }
+        }
+
+        function generateUpiQrCode(amount) {
+            const upiUrl = `upi://pay?pa=${encodeURIComponent(merchantUpiId)}&pn=${encodeURIComponent(merchantName)}&am=${amount}&cu=INR&tn=${encodeURIComponent('FIT IN 7 Session')}`;
+            const qrWrapper = document.getElementById('qrImageWrapper');
+            const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(upiUrl)}&color=d4af37&bgcolor=1a1a1a`;
+            qrWrapper.innerHTML = `<img src="${qrImageUrl}" alt="Scan to pay ₹${amount}" class="rounded-xl border border-gold/40 shadow-lg">`;
+            document.querySelectorAll('.currentDynamicUpi').forEach(el => el.textContent = merchantUpiId);
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+            const email = document.getElementById('clientEmail').value;
+            const pkg = document.getElementById('selectedPackageInput').value;
+            const slot = document.getElementById('preferredSlot').value || 'Not specified';
+            const amount = currentPrice;
+
+            const upiIntentUrl = `upi://pay?pa=${encodeURIComponent(merchantUpiId)}&pn=${encodeURIComponent(merchantName)}&am=${amount}&cu=INR&tn=${encodeURIComponent('FIT IN 7 - ' + pkg)}`;
+
+            // Launch UPI intent link for Mobile App Payments
+            window.location.href = upiIntentUrl;
+
+            // Trigger WhatsApp confirmation message to trainer
+            setTimeout(() => {
+                const message = `*NEW FIT IN 7 BOOKING*%0A%0A` +
+                    `*Client:* ${encodeURIComponent(name)}%0A` +
+                    `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                    `*Email:* ${encodeURIComponent(email)}%0A` +
+                    `*Program:* ${encodeURIComponent(pkg)}%0A` +
+                    `*Amount:* ₹${amount}%0A` +
+                    `*Slot/Details:* ${encodeURIComponent(slot)}`;
+
+                window.open(`https://wa.me/?text=${message}`, '_blank');
+                closeBookingModal();
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
